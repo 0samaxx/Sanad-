@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - SANAD</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <div class="auth-card">
+
+            <div class="auth-header">
+                <p class="eyebrow">SANAD</p>
+
+                <h1>Welcome back</h1>
+
+                <p>
+                    Log in to continue making an impact in your community.
+                </p>
+            </div>
+
+
+            <form id="login-form">
+
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+
+                <button type="submit" class="btn btn-primary auth-button">
+                    Log In
+                </button>
+
+            </form>
+
+
+            <p id="login-message" class="auth-message"></p>
+
+
+            <div class="auth-footer">
+                <p>
+                    Don't have an account?
+                    <a href="signup.html">Create an account</a>
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="../auth.js"></script>
+
+</body>
+
+</html>

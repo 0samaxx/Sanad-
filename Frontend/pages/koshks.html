@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SANAD Koshks</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Leaflet Map CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    
+</head>
+
+<body>
+
+    <main>
+
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">FIND A KOSHK</p>
+
+                    <h1>Find help where it is needed.</h1>
+
+                    <p>
+                        Explore SANAD Koshks across Egypt and discover
+                        what each location currently needs.
+                    </p>
+
+                </div>
+
+                <div class="koshk-controls">
+
+    <input
+        type="text"
+        id="koshk-search"
+        placeholder="Search by Location or Need..."
+    >
+
+    <select id="urgency-filter">
+
+        <option value="All">All Urgency levels</option>
+        <option value="High">High demand</option>
+        <option value="Medium">Medium demand</option>
+        <option value="Solved">Solved</option>
+
+    </select>
+
+</div>
+
+<div id="koshk-map"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Leaflet Map JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Our Firebase + map code -->
+    <script type="module" src="../script.js"></script>
+
+</body>
+</html>
